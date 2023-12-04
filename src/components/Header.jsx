@@ -18,7 +18,7 @@ function Header() {
                         <div className="attr-nav inc-border">
                             <ul>
                                 <li className="contact">
-                                    <i><FaPhone /></i>
+                                <i className="fas fa-phone"></i>
                                     <p>
                                         Call us today! 
                                         <strong>+123 456 7890</strong>
@@ -28,7 +28,7 @@ function Header() {
                         </div>
                         <div className="navbar-header">
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                                <i><FaBars /></i>
+                            <i className="fa fa-bars"></i>
                             </button>
                             <a className="navbar-brand" href="index.html">
                                 <img src={logo1} className="logo logo-display" alt="Logo1" />
@@ -39,40 +39,6 @@ function Header() {
                             <ul className="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
                                 <li className="dropdown">
                                     <a href="#" data-toggle='dropdown'>Home  <IconChevronDown size={18} /></a>
-                                   { /*<ul className='dropdow-menu'>
-                                        <li className='dropdown'>
-                                            <a href='#' data-toggle='dropdown'>Multi Page <IconChevronRight size={18}/></a>
-                                            <ul className='dropdown-menu'>
-                                                <li><a>Home It Solutions</a></li>
-                                                <li><a>Home Technology</a></li>
-                                                <li><a>Home It Agency</a></li>
-                                                <li><a>Home Software Landing</a></li>
-                                                <li><a>Home Cyber Security</a></li>
-                                                <li><a>Home Tech Solution</a></li>
-                                                <li><a>Home It Management</a></li>
-                                                <li><a>Home Cyber Tech</a></li>
-                                                <li><a>Home Internet Provider</a></li>
-                                                <li><a>Home Business Solutions</a></li>
-                                                <li><a>Home Technical Service</a></li>
-                                            </ul>
-                                        </li>
-                                        <li className='dropdown'>
-                                            <a href='' data-toggle='dropdown'>One Page <IconChevronRight size={18}/></a>
-                                            <ul className='dropdown-menu'>
-                                                <li><a>Home It Solutions</a></li>
-                                                <li><a>Home Technology</a></li>
-                                                <li><a>Home It Agency</a></li>
-                                                <li><a>Home Software Landing</a></li>
-                                                <li><a>Home Cyber Security</a></li>
-                                                <li><a>Home Tech Solution</a></li>
-                                                <li><a>Home It Management</a></li>
-                                                <li><a>Home Cyber Tech</a></li>
-                                                <li><a>Home Internet Provider</a></li>
-                                                <li><a>Home Business Solutions</a></li>
-                                                <li><a>Home Technical Service</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>*/}  
                                 </li>
                                 <li className="dropdown">
                                     <a href="#"  data-toggle="dropdown">Company <IconChevronDown size={18} /></a>
@@ -115,7 +81,7 @@ function Header() {
                                         <li><a href="blog-single-with-sidebar.html">Blog Single With Sidebar</a></li>
                                     </ul>
                                 </li>
-                                <li>
+                                <li id='contact'>
                                     <a href="./Contactpage.jsx">Contact</a>
                                 </li>
                             </ul>

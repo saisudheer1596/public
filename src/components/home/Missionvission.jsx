@@ -1,6 +1,6 @@
 import React from 'react'
 import mission from './../../assets/mission.jpg'
-import { FaArrowAltCircleRight, FaArrowCircleRight } from 'react-icons/fa'
+
 function Missionvission() {
     return (
         <div className="who-we-area-area bg-dark text-light">
@@ -17,9 +17,7 @@ function Missionvission() {
                                         Engaged its was evident pleased husband. Ye goodness felicity do the best disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed no overcame possible it on best circle.
                                     </p>
                                     <a className="btn circle btn-light effect btn-sm">Know More 
-                                        <i className="fas fa-arrow-alt-circle-right">
-                                            <FaArrowAltCircleRight />
-                                        </i>
+                                        <i className="fas fa-arrow-alt-circle-right"></i>
                                     </a>
                                 </div>
                                 <div className="col-lg-6 col-md-6 item">
@@ -29,9 +27,7 @@ function Missionvission() {
                                         Engaged its was evident pleased husband. Ye goodness felicity do the best disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed no overcame possible it on best circle.
                                     </p>
                                     <a className="btn circle btn-light effect btn-sm">Know More 
-                                        <i className="fas fa-arrow-alt-circle-right">
-                                            <FaArrowCircleRight />
-                                        </i>
+                                        <i className="fas fa-arrow-alt-circle-right"></i>
                                     </a>
                                 </div>
                             </div>

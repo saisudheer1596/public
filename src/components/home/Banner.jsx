@@ -4,7 +4,6 @@ import imagetwo from './../../assets/banner/banner2.jpg'
 //import { IconPlayerPlayFilled } from '@tabler/icons-react'
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { FaPlay } from 'react-icons/fa'
 
 function Banner() {
     return (
@@ -13,7 +12,7 @@ function Banner() {
                 <Carousel
                     autoPlay
                     infiniteLoop  
-                    showArrows={true}
+                    showArrows={false}
                     showStatus={false}
                     showIndicators={false}
                     showThumbs={false}
@@ -36,7 +35,7 @@ function Banner() {
                                                             Start Now
                                                         </a>
                                                         <a className="popup-youtube relative video-play-button" href="#">
-                                                        <i><FaPlay /></i>
+                                                        <i className="fa fa-play"></i>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -65,7 +64,7 @@ function Banner() {
                                                             Start Now
                                                         </a>
                                                         <a className="popup-youtube relative video-play-button" href="#">
-                                                            <i><FaPlay /></i>
+                                                            <i className="fa fa-play"></i>
                                                         </a>
                                                     </div>
                                                 </div>
