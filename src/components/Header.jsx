@@ -1,47 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
+//import './css/nav.css'
 import { useWindowScroll } from '@mantine/hooks';
-import { IconChevronDown } from '@tabler/icons-react';
-import { FaBars, FaPhone } from 'react-icons/fa';
 import logo1 from '../assets/logo/logo-light.png'
 import logo2 from '../assets/logo/logo.png'
 
 function Header() {
     const [scroll] = useWindowScroll()
-    console.log(scroll.y)
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleNavbar = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
         <header id="home">
-            {/* <nav className="navbar navbar-default navbar-fixed white bootsnav on menu-center no-full"> */}
-            {/* <nav className="navbar navbar-default navbar-fixed white bootsnav on menu-center no-full no-background"> */}
-                <nav className={`navbar navbar-default navbar-fixed white bootsnav on menu-center no-full ${scroll.y >80 ? '' :'no-background'}`}>
+            <nav className={`navbar navbar-default navbar-fixed white bootsnav on menu-center no-full ${scroll.y > 80 ? '' : 'no-background'}`}>
                 <div className="container">
                     <div className="nav-box">
                         <div className="attr-nav inc-border">
                             <ul>
                                 <li className="contact">
-                                <i className="fas fa-phone"></i>
+                                    <i className="fas fa-phone"></i>
                                     <p>
-                                        Call us today! 
+                                        Call us today!
                                         <strong>+123 456 7890</strong>
                                     </p>
                                 </li>
                             </ul>
                         </div>
                         <div className="navbar-header">
-                            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                            <i className="fa fa-bars"></i>
+                            <button type="button" className={`navbar-toggle ${isOpen ? '' : 'collapsed'}`} onClick={toggleNavbar} data-toggle="collapse" data-target="#navbar-menu" aria-expanded='true'>
+                                <i className={`fa ${isOpen ? 'fa-bars' : 'fa-times'}`}></i>
                             </button>
                             <a className="navbar-brand" href="index.html">
                                 <img src={logo1} className="logo logo-display" alt="Logo1" />
                                 <img src={logo2} className="logo logo-scrolled" alt="Logo2" />
                             </a>
                         </div>
-                        <div className="collapse navbar-collapse" id="navbar-menu">
+                        <div className={`collapse navbar-collapse ${isOpen ? '' : 'show'}`} id="navbar-menu">
                             <ul className="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
                                 <li className="dropdown">
-                                    <a href="#" data-toggle='dropdown'>Home  <IconChevronDown size={18} /></a>
+                                    <a href="#" className='dropdown-toggle' data-toggle='dropdown'>Home</a>
                                 </li>
                                 <li className="dropdown">
-                                    <a href="#"  data-toggle="dropdown">Company <IconChevronDown size={18} /></a>
+                                    <a href="#" className='dropdown-toggle' data-toggle="dropdown">Company</a>
                                     <ul className="dropdown-menu">
                                         <li><a href="about-us.html">About Company</a></li>
                                         <li><a href="why-choose-us.html">Why Choose us</a></li>
@@ -53,7 +55,7 @@ function Header() {
                                     </ul>
                                 </li>
                                 <li className="dropdown">
-                                    <a href="#" data-toggle="dropdown">Services <IconChevronDown size={18} /></a>
+                                    <a href="#" className='dropdown-toggle' data-toggle="dropdown">Services</a>
                                     <ul className="dropdown-menu fadeOutUp" >
                                         <li><a href="services.html">Services Version One</a></li>
                                         <li><a href="services-2.html">Services Version Two</a></li>
@@ -62,7 +64,7 @@ function Header() {
                                     </ul>
                                 </li>
                                 <li className="dropdown">
-                                    <a href="#" data-toggle="dropdown">Case Studies  <IconChevronDown size={18} /></a>
+                                    <a href="#" className='dropdown-toggle' data-toggle="dropdown">Case Studies</a>
                                     <ul className="dropdown-menu fadeOutUp" >
                                         <li><a href="case-studies-1.html">Versino One</a></li>
                                         <li><a href="case-studies-2.html">Versino Two</a></li>
@@ -71,7 +73,7 @@ function Header() {
                                     </ul>
                                 </li>
                                 <li className="dropdown">
-                                    <a href="#" data-toggle="dropdown">Blog  <IconChevronDown size={18} /></a>
+                                    <a href="#" className='dropdown-toggle' data-toggle="dropdown">Blog</a>
                                     <ul className="dropdown-menu">
                                         <li><a href="blog-standard.html">Blog Standard</a></li>
                                         <li><a href="blog-with-sidebar.html">Blog With Sidebar</a></li>

@@ -1,15 +1,35 @@
 import React from 'react'
-import { FaQuoteRight, FaStar, FaStarHalfAlt } from 'react-icons/fa';
 import team1 from '../../assets/team/1.jpg'
 import team2 from '../../assets/team/2.jpg'
 import team3 from '../../assets/team/3.jpg';
-import { Carousel } from 'react-responsive-carousel';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css'
+
+
 
 
 
 function Testimonials() {
-    return (
-        <div className="testimonials-area carousel-shadow default-padding">
+    const responsive ={
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 2,
+            slidesToSlide: 2 // optional, default to 1.
+          },
+          tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2,
+            slidesToSlide: 2 // optional, default to 1.
+          },
+          mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1,
+            slidesToSlide: 1 // optional, default to 1.
+          }
+        
+    };
+  return (
+    <div className="testimonials-area carousel-shadow default-padding">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-8 offset-lg-2">
@@ -24,12 +44,12 @@ function Testimonials() {
                 <div className="testimonial-items">
                     <div className="testimonial-carousel owl-carousel owl-theme owl-loaded owl-drag">
                         <Carousel
-                            autoPlay
                             infiniteLoop
-                            showArrows={false}
+                            responsive={responsive}
                             showStatus={false}
-                            showIndicators={true}
                             showThumbs={false}
+                            showDots={true}
+                            
                         >
                             <div className="item">
                                 <div className="row">
@@ -44,11 +64,11 @@ function Testimonials() {
                                             Excited main sixteen parties. direction has led immediate. Law gate her well bed life feet seen rent per instructions!
                                         </p>
                                         <div className="rating">
-                                            <i className="fas fa-star"><FaStar /></i>
-                                            <i className="fas fa-star"><FaStar /></i>
-                                            <i className="fas fa-star"><FaStar /></i>
-                                            <i className="fas fa-star"><FaStar /></i>
-                                            <i className="fas fa-star-half-alt"><FaStarHalfAlt /></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star-half-alt"></i>
                                         </div>
                                         <div className="provider">
                                             <h4>Ocean Babs</h4>
@@ -57,7 +77,6 @@ function Testimonials() {
                                     </div>
                                 </div>
                             </div>
-
                             <div className="item">
                                 <div className="row">
                                     <div className="col-lg-4">
@@ -71,11 +90,11 @@ function Testimonials() {
                                             Excited main sixteen parties. direction has led immediate. Law gate her well bed life feet seen rent per instructions!
                                         </p>
                                         <div className="rating">
-                                            <i className="fas fa-star"><FaStar /></i>
-                                            <i className="fas fa-star"><FaStar /></i>
-                                            <i className="fas fa-star"><FaStar /></i>
-                                            <i className="fas fa-star"><FaStar /></i>
-                                            <i className="fas fa-star-half-alt"><FaStarHalfAlt /></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star-half-alt"></i>
                                         </div>
                                         <div className="provider">
                                             <h4>Hundi Monas</h4>
@@ -84,7 +103,6 @@ function Testimonials() {
                                     </div>
                                 </div>
                             </div>
-
                             <div className="item">
                                 <div className="row">
                                     <div className="col-lg-4">
@@ -98,11 +116,11 @@ function Testimonials() {
                                             Excited main sixteen parties. direction has led immediate. Law gate her well bed life feet seen rent per instructions!
                                         </p>
                                         <div className="rating">
-                                            <i className="fas fa-star"><FaStar /></i>
-                                            <i className="fas fa-star"><FaStar /></i>
-                                            <i className="fas fa-star"><FaStar /></i>
-                                            <i className="fas fa-star"><FaStar /></i>
-                                            <i className="fas fa-star-half-alt"><FaStarHalfAlt /></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star-half-alt"></i>
                                         </div>
                                         <div className="provider">
                                             <h4>Adam Jones</h4>
@@ -116,8 +134,7 @@ function Testimonials() {
                 </div>
             </div>
         </div>
-
-    )
+  )
 }
 
 export default Testimonials

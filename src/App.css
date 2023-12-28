@@ -1145,7 +1145,7 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
 .heading-left p {
     margin-top: -5px;
     margin-bottom: 0;
-    font-size: 0.82rem;
+    font-size: 1.1rem;
 }
 
 .heading-left h2 {
@@ -1483,7 +1483,7 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
 
 .breadcrumb>li+li::before {
     content: "\f105";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     font-weight: 600;
     padding: 0 5px;
     color: #ffffff;
@@ -1552,6 +1552,12 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
 =================================================================== */
 body,
 .banner-area {
+    height: 100%;
+}
+
+body,
+.banner-area,
+.banner-area div {
     height: 100%;
 }
 
@@ -2007,7 +2013,7 @@ body,
 }
 
 .banner-area .content h2 strong {
-    font-weight: 600;
+    font-weight: 800;
     display: block;
 }
 
@@ -2048,7 +2054,7 @@ body,
 }
 
 .banner-area.text-large .content h2 {
-    font-size: 60px;
+    font-size: 80px;
 }
 
 .banner-area.carousel-shape p {
@@ -3718,7 +3724,7 @@ body,
     left: 0;
     top: 0;
     content: "\f00c";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     font-weight: 600;
     font-size: 14px;
 }
@@ -4128,6 +4134,7 @@ body,
     padding: 50px;
     box-shadow: 0 5px 30px 0 rgba(214, 215, 216, 0.57);
     text-align: center;
+    line-height: 30px;
 }
 
 .works-about-area.reverse .works-about-items .thumb .fun-fact {
@@ -4158,7 +4165,7 @@ body,
     right: -25px;
     top: 0;
     content: "\f067";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     font-weight: 600;
     font-size: 20px;
 }
@@ -4200,20 +4207,21 @@ body,
 }
 
 .works-about-items ul li {
-    margin-top: 10px;
+    margin-top: 25px;
     align-items: center;
     position: relative;
     z-index: 1;
+    padding-left: 25px;
 }
 
 .works-about-items ul li::after {
-    position: fixed;
+    position: absolute;
     left: 0;
-    top: 0;
+    top: -4px;
     content: "\f058";
     height: 100%;
     width: 100%;
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     font-weight: 600;
     color: #086AD8;
 }
@@ -4221,8 +4229,8 @@ body,
 .works-about-items ul li h5 {
     text-transform: capitalize;
     font-weight: 600;
-    margin: 0;
-    font-size: 13px;
+    margin: 0 1rem;
+    font-size: 16px;
     
 }
 
@@ -4715,7 +4723,7 @@ body,
     left: 0;
     top: 0;
     content: "\f00c";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     color: #086AD8;
 }
 
@@ -4996,7 +5004,7 @@ body,
     left: 0;
     top: 0;
     content: "\f058";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     font-weight: 600;
     height: 100%;
     width: 100%;
@@ -5083,7 +5091,7 @@ body,
     top: 50%;
     content: "\f105";
     border-radius: 50%;
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     font-weight: 660;
     transform: translateY(-50%);
     font-size: 20px;
@@ -6021,7 +6029,7 @@ body,
 }
 
 .accordion .card-header h4:after {
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     content: "\f107";
     position: absolute;
     right: 0;
@@ -6639,7 +6647,7 @@ a.btn-more:hover {
     -moz-border-radius: 50%;
     border-radius: 50%;
     content: "\f07b";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     height: 8px;
     left: 0;
     position: absolute;
@@ -6823,7 +6831,7 @@ a.btn-more:hover {
     content: "\f00c";
     height: 100%;
     width: 100%;
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     color: #086AD8;
     font-weight: 600;
     font-size: 14px;
@@ -6867,7 +6875,7 @@ a.btn-more:hover {
     position: absolute;
     left: 30px;
     content: "\f10d";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     color: #086AD8;
     font-size: 30px;
     top: 5px;
@@ -10105,7 +10113,7 @@ nav.navbar.bootsnav.nav-box .navbar-brand {
 
 .nav {
     padding-left: 5px;
-    padding-right: 70px;
+    padding-right: 5px;
     margin-bottom: 0;
     list-style: none;
     display: block;
@@ -10206,7 +10214,7 @@ nav.navbar.bootsnav.nav-box .navbar-brand {
 .navbar .attr-nav .contact {
     display: flex;
     align-items: center;
-    padding: 5px 0;
+    padding: 25px 0;
 }
 
 .navbar .attr-nav .contact strong {
@@ -10220,7 +10228,7 @@ nav.navbar.bootsnav.nav-box .navbar-brand {
 }
 
 .navbar .attr-nav .contact i {
-    font-size: 30px;
+    font-size: 50px;
     margin-right: 5px;
     padding-right: 5px;
     border-right: 1px solid #e7e7e7;
@@ -10232,7 +10240,7 @@ nav.navbar.bootsnav.nav-box .navbar-brand {
 
 .navbar .attr-nav .contact p {
     margin: 0;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 25px;
 }
 
@@ -10268,9 +10276,15 @@ nav.navbar.bootsnav.nav-box .navbar-brand {
 
     .navbar>.container .navbar-brand,
     .navbar>.container-fluid .navbar-brand {
-        margin-left: -20px;
+        margin-left: 2px;
     }
 }
+
+@media only screen and (max-width: 1199px) {
+    .navbar .attr-nav .contact {
+      display: none;
+    }
+  }
 
  
 .navbar-toggle {
@@ -11114,7 +11128,7 @@ nav.navbar.bootsnav ul.nav>li.dropdown>a.dropdown-toggle:hover::after {
 
 nav.navbar.bootsnav ul.nav>li.dropdown>a.dropdown-toggle::after {
     content: "\f107";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     margin-left: 5px;
     margin-top: 2px;
     border: none;
@@ -11766,7 +11780,7 @@ nav.navbar.bootsnav {
     }
 
     nav.navbar.bootsnav li.dropdown ul.dropdown-menu li.dropdown>a.dropdown-toggle:before {
-        font-family: 'Font Awesome 5 Pro';
+        font-family: 'Font Awesome 5 Free';
         font-weight: 900;
         float: right;
         content: "\f105";
@@ -11774,7 +11788,7 @@ nav.navbar.bootsnav {
     }
 
     nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li.dropdown>a.dropdown-toggle:before {
-        font-family: 'Font Awesome 5 Pro';
+        font-family: 'Font Awesome 5 Free';
         font-weight: 900;
         float: right;
         content: "\f105";
@@ -11782,7 +11796,7 @@ nav.navbar.bootsnav {
     }
 
     nav.navbar.bootsnav ul.navbar-right li.dropdown.dropdown-left ul.dropdown-menu li.dropdown>a.dropdown-toggle:before {
-        font-family: 'Font Awesome 5 Pro';
+        font-family: 'Font Awesome 5 Free';
         font-weight: 900;
         float: left;
         content: "\f104";
@@ -11960,7 +11974,7 @@ nav.navbar.bootsnav {
 
     nav.navbar.bootsnav.menu-center ul.nav.navbar-center {
         float: none;
-        margin: 0 auto;
+        margin: 0;
         display: table;
         table-layout: fixed;
     }
@@ -12579,7 +12593,7 @@ nav.navbar.bootsnav {
     }
 
     nav.navbar.bootsnav li.dropdown a.dropdown-toggle:before {
-        font-family: 'Font Awesome 5 Pro';
+        font-family: 'Font Awesome 5 Free';
         font-weight: 900;
         content: "\f105";
         float: right;
@@ -12692,7 +12706,7 @@ nav.navbar.bootsnav {
     nav.navbar.bootsnav .dropdown .megamenu-content .col-menu .title::before {
         content: "\f105";
         float: right;
-        font-family: "Font Awesome 5 Pro";
+        font-family: "Font Awesome 5 Free";
         font-size: 16px;
         font-weight: 900;
         margin-left: 10px;

@@ -1,6 +1,5 @@
 import React from 'react'
 import workout from './../../assets/workout.jpg'
-import { FaCircleCheck } from 'react-icons/fa6';
 function Workout() {
     return (
         <div className="works-about-area overflow-hidden">
@@ -15,11 +14,9 @@ function Workout() {
                             </p>
                             <ul>
                                 <li>
-                                    <i><FaCircleCheck /></i>
                                     <h5>100% Client Satisfaction</h5>
                                 </li>
-                                <li>
-                                    <i><FaCircleCheck /></i>
+                                <li>   
                                     <h5>World Class Worker</h5>
                                 </li>
                             </ul>

@@ -1,4 +1,10 @@
 import React from 'react'
+import service2 from './../../assets/services/analysis.png'
+import service1 from './../../assets/services/cogwheel.png'
+import service3 from './../../assets/services/reduction.png'
+import service4 from './../../assets/services/interview.png'
+import service5 from './../../assets/services/architecture.png'
+import service6 from './../../assets/services/firewall.png'
 
 function Services() {
     return (
@@ -20,7 +26,7 @@ function Services() {
                             <div className="item">
                                 <div className="info">
                                     <h4>IT Design</h4>
-                                    <i className="flaticon-cogwheel"></i>
+                                    <img src={service1} style={{width:'5rem'}}/>
                                     <p>
                                         Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.
                                     </p>
@@ -32,7 +38,7 @@ function Services() {
                             <div className="item">
                                 <div className="info">
                                     <h4>Analytic Solutions</h4>
-                                    <i className="flaticon-analysis-1"></i>
+                                    <img src={service2} style={{width:'5rem'}}/>
                                     <p>
                                         Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.
                                     </p>
@@ -44,7 +50,7 @@ function Services() {
                             <div className="item">
                                 <div className="info">
                                     <h4>Risk Management</h4>
-                                    <i className="flaticon-reduction"></i>
+                                    <img src={service3} style={{width:'5rem'}}/>
                                     <p>
                                         Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.
                                     </p>
@@ -56,7 +62,7 @@ function Services() {
                             <div className="item">
                                 <div className="info">
                                     <h4>Business Planning</h4>
-                                    <i className="flaticon-interview"></i>
+                                    <img src={service4} style={{width:'5rem'}}/>
                                     <p>
                                         Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.
                                     </p>
@@ -68,7 +74,7 @@ function Services() {
                             <div className="item">
                                 <div className="info">
                                     <h4>Infrastructure Plan</h4>
-                                    <i className="flaticon-sketch"></i>
+                                    <img src={service5} style={{width:'5rem'}}/>
                                     <p>
                                         Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.
                                     </p>
@@ -80,7 +86,7 @@ function Services() {
                             <div className="item">
                                 <div className="info">
                                     <h4>Firewall Advance</h4>
-                                    <i className="flaticon-firewall"></i>
+                                    <img src={service6} style={{width:'5rem'}}/>
                                     <p>
                                         Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.
                                     </p>
