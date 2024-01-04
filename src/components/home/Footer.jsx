@@ -86,11 +86,12 @@ function Footer() {
                                 <ul>
                                     <li>
                                         <strong>Address:</strong>
-                                        5919 Trussville Crossings Pkwy, Birmingham AL 35235
+                                        Plot No 201, Gayathri Nagar, 
+Hyderabad 500018
                                     </li>
                                     <li>
                                         <strong>Email:</strong>
-                                        <a href="mailto:info@validtheme.com">info@validtheme.com</a>
+                                        <a href="support@warriortechsolutions.in">support@warriortechsolutions.in</a>
                                     </li>
                                 </ul>
                             </div>
@@ -119,15 +120,15 @@ function Footer() {
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
-                        <p>Copyright &copy;  2020. Designed by <a href="#">validthemes</a></p>
+                        <p>Copyright 2024. Warrior Tech Solutions All Rights Reserved.</p>
                     </div>
                     <div className="col-md-6 text-right link">
                         <ul>
                             <li>
-                                <a href="#">Terms</a>
+                                <a href="#">Terms and Conditions</a>
                             </li>
                             <li>
-                                <a href="#">Privacy</a>
+                                <a href="#">Privacy Policy</a>
                             </li>
                             <li>
                                 <a href="#">Support</a>

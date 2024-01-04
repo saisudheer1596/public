@@ -1,96 +1,118 @@
 import React from 'react'
-import service2 from './../../assets/services/analysis.png'
-import service1 from './../../assets/services/cogwheel.png'
-import service3 from './../../assets/services/reduction.png'
-import service4 from './../../assets/services/interview.png'
-import service5 from './../../assets/services/architecture.png'
-import service6 from './../../assets/services/firewall.png'
+import service1 from './../../assets/services/service-1.jpg'
+import service2 from './../../assets/services/service-2.jpg'
+import service3 from './../../assets/services/service-3.jpg'
+import service4 from './../../assets/services/service-4.jpg'
+import service5 from './../../assets/services/service-5.jpg'
+import service8 from './../../assets/services/service-8.png'
+import '../css/Service.css'
 
 function Services() {
     return (
-        <div className="service-area default-padding bottom-less bg-cover">
+        <div className="service-area half-bg overflow-hidden default-padding-top">
             <div className="container">
-                <div className="row">
-                    <div className="col-lg-8 offset-lg-2">
-                        <div className="site-heading text-center">
-                            <h4>Services</h4>
-                            <h2>What we do</h2>
+                <div className="heading-left">
+                    <div className="row">
+                        <div className="col-lg-6">
+                            <h5>15 years of experience</h5>
+                            <h2>
+                                Offer The Latest Software And Solutions To Our customers!
+                            </h2>
+                        </div>
+                        <div className="col-lg-6">
+                            <p>
+                                Everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression. Lasted my coming uneasy marked so should. Gravity letters it amongst herself dearest an windows by. Wooded ladies she basket season.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="container">
-                <div className="service-items text-center">
+                <div className="services-box text-light">
                     <div className="row">
-                        <div className="col-lg-4 col-md-6 single-item">
+                        <div className="single-item col-lg-4 col-md-6">
                             <div className="item">
-                                <div className="info">
-                                    <h4>IT Design</h4>
-                                    <img src={service1} style={{width:'5rem'}}/>
+                                <div className="photo">
+                                    <a href="https://www.warriortechsolutions.in/service/We offer custom web development services">
+                                        <img src={service1} alt="" />
+                                    </a>
+                                </div>
+                                <div className="text">
+                                    <h4>
+                                        <a href="https://www.warriortechsolutions.in/service/We offer custom web development services">Web Development</a>
+                                    </h4>
                                     <p>
-                                        Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.
+                                        We offer custom web development services that are tailored to meet the specific needs of our clients.
                                     </p>
-                                    <a className="btn-standard" href="#">Read More</a>
+                                    <div className="read-more">
+                                        <a href="https://www.warriortechsolutions.in/service/We offer custom web development services">Read More</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 single-item">
+                        <div className="single-item col-lg-4 col-md-6">
                             <div className="item">
-                                <div className="info">
-                                    <h4>Analytic Solutions</h4>
-                                    <img src={service2} style={{width:'5rem'}}/>
-                                    <p>
-                                        Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.
-                                    </p>
-                                    <a className="btn-standard" href="#">Read More</a>
+                                <img src={service2} alt="Thumb" />
+                                <div className="overlay">
+                                    <div className="info">
+                                        <h4>Product Design</h4>
+                                        <a href="#">
+                                            <i className="fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 single-item">
+                        <div className="single-item col-lg-4 col-md-6">
                             <div className="item">
-                                <div className="info">
-                                    <h4>Risk Management</h4>
-                                    <img src={service3} style={{width:'5rem'}}/>
-                                    <p>
-                                        Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.
-                                    </p>
-                                    <a className="btn-standard" href="#">Read More</a>
+                                <img src={service3} alt="Thumb" />
+                                <div className="overlay">
+                                    <div className="info">
+                                        <h4>Outsourcing</h4>
+                                        <a href="#">
+                                            <i className="fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 single-item">
+                        <div className="single-item col-lg-4 col-md-6">
                             <div className="item">
-                                <div className="info">
-                                    <h4>Business Planning</h4>
-                                    <img src={service4} style={{width:'5rem'}}/>
-                                    <p>
-                                        Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.
-                                    </p>
-                                    <a className="btn-standard" href="#">Read More</a>
+                                <img src={service4} alt="Thumb" />
+                                <div className="overlay">
+                                    <div className="info">
+                                        <h4>Outsourcing</h4>
+                                        <a href="#">
+                                            <i className="fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 single-item">
+                        <div className="single-item col-lg-4 col-md-6">
                             <div className="item">
-                                <div className="info">
-                                    <h4>Infrastructure Plan</h4>
-                                    <img src={service5} style={{width:'5rem'}}/>
-                                    <p>
-                                        Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.
-                                    </p>
-                                    <a className="btn-standard" href="#">Read More</a>
+                                <img src={service5} alt="Thumb" />
+                                <div className="overlay">
+                                    <div className="info">
+                                        <h4>Outsourcing</h4>
+                                        <a href="#">
+                                            <i className="fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 single-item">
+                        
+                        <div className="single-item col-lg-4 col-md-6">
                             <div className="item">
-                                <div className="info">
-                                    <h4>Firewall Advance</h4>
-                                    <img src={service6} style={{width:'5rem'}}/>
-                                    <p>
-                                        Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.
-                                    </p>
-                                    <a className="btn-standard" href="#">Read More</a>
+                                <img src={service8} alt="Thumb" />
+                                <div className="overlay">
+                                    <div className="info">
+                                        <h4>Outsourcing</h4>
+                                        <a href="#">
+                                            <i className="fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

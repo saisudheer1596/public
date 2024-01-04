@@ -7,8 +7,8 @@ import Missionvission from '../components/home/Missionvission'
 import Services from '../components/home/Services'
 import Workout from '../components/home/Workout'
 import Testimonials from '../components/home/Testimonials'
-import Faq from '../components/home/Faq'
-import Blog from '../components/home/Blog'
+//import Faq from '../components/home/Faq'
+//import Blog from '../components/home/Blog'
 import Contactarea from '../components/home/Contactarea'
 import Footer from '../components/home/Footer'
 
@@ -18,13 +18,11 @@ function Homepage() {
             <Header />
             <Banner />
             <Features />
-            <Clients />
             <Missionvission />
             <Services />
             <Workout />
             <Testimonials />
-            <Faq />
-            <Blog />
+            <Clients />
             <Contactarea />
             <Footer />
         </>

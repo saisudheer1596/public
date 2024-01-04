@@ -28,9 +28,12 @@ function Banner() {
                                         <div className="row">
                                             <div className="col-lg-8 offset-lg-2">
                                                 <div className="content">
-                                                    <h2 data-animation="animated slideInRight">Creating a better <strong>IT solutions</strong></h2>
+                                                    <h1 data-animation="animated slideInRight"><strong>Boost Your Productivity and Efficiency with Our Innovative Technology Solutions</strong></h1>
+                                                    <p>
+                                                        Maximize Your Potential with Technology Solutions Tailored to Your Business Needs.
+                                                    </p>
                                                     <a data-animation="animated fadeInUp" className="btn circle btn-light border btn-md" href="#">Start Now</a>
-                                                    <a className="popup-youtube relative video-play-button" href="#">
+                                                    <a className="popup-youtube relative video-play-button" href="https://www.youtube.com/watch?v=EopfzqbzYmU">
                                                         <i className="fa fa-play"></i>
                                                     </a>
                                                 </div>
@@ -50,9 +53,12 @@ function Banner() {
                                         <div className="row">
                                             <div className="col-lg-8 offset-lg-2">
                                                 <div className="content">
-                                                    <h2 data-animation="animated slideInRight">Transform every<strong>Digital Process</strong></h2>
+                                                    <h1 data-animation="animated slideInRight"><strong>Empower Your Business from Warrior Tech Solutions.</strong></h1>
+                                                    <p>
+                                                        Transform Your Business Operations with our Innovative and Reliable Technology Solutions
+                                                    </p>
                                                     <a data-animation="animated fadeInUp" className="btn circle btn-light border btn-md" href="#">Start Now</a>
-                                                    <a className="popup-youtube relative video-play-button" href="#">
+                                                    <a className="popup-youtube relative video-play-button" href="https://www.youtube.com/watch?v=EopfzqbzYmU">
                                                         <i className="fa fa-play"></i>
                                                     </a>
                                                 </div>

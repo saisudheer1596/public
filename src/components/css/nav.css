@@ -268,6 +268,7 @@
   
   .navbar-brand > img {
     display: block;
+    height: 70px;
   }
   
   @media (min-width: 768px) {

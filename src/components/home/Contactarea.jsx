@@ -83,7 +83,7 @@ function Contactarea() {
                                             <div className="info">
                                                 <p>
                                                     Our Location
-                                                    <span>Alexima, NT 456678</span>
+                                                    <span>Plot No 201, Gayathri Nagar, Hyderabad 500018</span>
                                                 </p>
                                             </div>
                                         </li>
@@ -96,7 +96,7 @@ function Contactarea() {
                                             <div className="info">
                                                 <p>
                                                     Send Us Mail
-                                                    <span>Info@yourdomain.com</span>
+                                                    <span>support@warriortechsolutions.in</span>
                                                 </p>
                                             </div>
                                         </li>
@@ -109,7 +109,7 @@ function Contactarea() {
                                             <div className="info">
                                                 <p>
                                                     Call Us
-                                                    <span>+456 456 4443</span>
+                                                    <span>+91 7416243959</span>
                                                 </p>
                                             </div>
                                         </li>
